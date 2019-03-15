@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<script src="https://cdn.bootcss.com/vue/2.5.21/vue.js"></script>
+	<style>
+		.hc{
+			color: red;
+			font-size: 30px;
+		}
+		.bbc{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="hb">
+		<h1 v-bind:class="'hc'">hello</h1>
+	</div>
+	<script>
+	var vm = new Vue({
+		el: "#hb",
+		data:{
+			hc:'bbc'
+		}
+	})
+	</script>
+</body>
+</html>

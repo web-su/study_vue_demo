@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+</head>
+
+<body>
+	<div id="Vme">
+        <h1 :style="{color:red,fontSize:size+'px',background:'#f3f3f3'}">hello</h1>
+        <h2 :style="[mytit]">world!</h2>
+    </div>
+	<script src="js/vue.js"></script>
+	<script>
+		var vm = new Vue({
+			el: "#Vme",
+			data: {
+               red:'blue',
+               size:30,
+               mytit:{
+                   fontSize:200+'px',
+                   color:'red',
+                   backgroundColor:'#f3f3f3'
+               }
+			}
+		})
+	</script>
+</body>
+
+</html>

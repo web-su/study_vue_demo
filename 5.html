@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<script src="https://cdn.bootcss.com/vue/2.5.21/vue.js"></script>
+	<style>
+		.hcolor{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div id="Vhtml">{{tit}}
+		<h2 v-text="tit"></h2>
+		<h2 v-html="tit"></h2>
+	</div>
+	<script>
+	var vm = new Vue({
+		el: "#Vhtml",
+		data:{
+			tit:"<h1 class='hcolor'>hello world!<h1>"
+		}
+		
+	})
+	</script>
+</body>
+</html>

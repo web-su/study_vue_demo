@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<div id="Vme">
+        <ul id="vtit">
+            <li v-for="(item,index) in items">{{ps}}-{{index}}-{{item.message}}
+                <span>123</span>
+            </li>
+        </ul>
+	</div>
+	<script src="js/vue.js"></script>
+	<script>
+		var vm = new Vue({
+			el: "#vtit",
+			data: {
+                ps:'0',
+                items:[
+                    {message:'fdsafda'},
+                    {message:'gregrewg'}
+                ]
+			}
+		})
+	</script>
+</body>
+
+</html>

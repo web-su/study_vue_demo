@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<script src="https://cdn.bootcss.com/vue/2.5.21/vue.js"></script>
+	<style>
+		.hc1{
+			color:red;
+		}
+		.hc2{
+			color:blue;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="Vhtml">
+		<h1 v-once="">{{n}}</h1>
+		<h2 :class="'hc'+n">hello world!</h2>
+		<input type="text" v-model="n">
+		</br>
+		<input type="radio" v-model="n" value="1">
+		<input type="radio" v-model="n" value="2">
+	</div>
+	<script>
+		var vm = new Vue({
+			el: "#Vhtml",
+			data: {
+				n: 1
+			}
+		})
+	</script>
+</body>
+
+</html>

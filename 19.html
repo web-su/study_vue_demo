@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+</head>
+
+<body>
+	<div id="Vme">
+        <ul>
+            <li v-for="v in stus">
+                {{v.name}} - {{v.sex}}
+            </li>
+        </ul>
+    </div>
+	<script src="js/vue.js"></script>
+	<script>
+		var vm = new Vue({
+			el: "#Vme",
+			data: {
+            stus:[
+                  {name:"小明",sex:"12"},
+                  {name:"小方",sex:"16"},
+                  {name:"小里",sex:"18"},
+                  {name:"小李",sex:"13"}
+              ]
+			}
+		})
+	</script>
+</body>
+
+</html>

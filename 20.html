@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+</head>
+
+<body>
+	<div id="Vme">
+        <li v-for="item in items" :key="item.id">
+            {{key}} - {{item}}
+        </li>
+    </div>
+	<script src="js/vue.js"></script>
+	<script>
+		var vm = new Vue({
+			el: "#Vme",
+			data: {
+                items:{
+                    name:"1123456",
+                    age:20
+                }
+			}
+		})
+	</script>
+</body>
+
+</html>

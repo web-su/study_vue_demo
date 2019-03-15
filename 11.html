@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<style>
+		.b1{
+			color: red;
+		}
+		.b2{
+			color: green;
+		}
+		.b3{
+			font-size: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="Vme">
+		<h1 class="b1" :class="hb">hello world!</h1>
+		<h2 :class="[bc,bb]">哈哈哈</h2>
+	</div>
+	<script src="js/vue.js"></script>
+	<script>
+		var vm = new Vue({
+			el: "#Vme",
+			data: {
+				hb:{b2:true},
+				bc:'b3',
+				bb:'b2'
+			}
+		})
+	</script>
+</body>
+
+</html>

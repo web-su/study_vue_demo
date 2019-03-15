@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<script src="https://cdn.bootcss.com/vue/2.5.21/vue.js"></script>
+</head>
+<body>
+	<div id="mod">
+		<h1>{{tit}}</h1>
+		<h1 v-once="tit">{{tit}}</h1>
+		<input type="text" v-model="tit">
+	</div>
+	<script>
+	var vm = new Vue({
+		el: "#mod",
+		data:{
+			tit:"mode"
+		}
+	})
+	</script>
+</body>
+</html>
